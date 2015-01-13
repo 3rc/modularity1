@@ -1,1 +1,105 @@
 /* ADD YOUR STYLES HERE */
+table.t1 {
+	width: 100%;
+}
+/* Separate .t1 class properties to affect only the first two tables; 
+	table.t1 to affect only width of the table & td, th to affect text
+	spacing + apply bottom border */
+
+table.t1 td, table.t1 th {
+	padding: 0px;
+	border-bottom: #999 1px solid;
+	padding: 5px 10px 5px 10px;
+
+}
+
+/* Separate properties for that .stats table. Opacity set in 
+	.statunder in lieu of color change */
+table.stats td {
+	border-bottom: #999 1px solid;
+	border-top: #999 1px solid;
+	padding: 20px 10px 20px 10px;
+	text-align: center;
+
+}
+table.stats .statnum {
+	font-size: 2em;
+	font-weight: 900;
+}
+table.stats .statunder {
+	font-size: .5em;
+	opacity: .6;
+}
+
+table.barchart {
+	width: 100%;
+}
+table.barchart th {
+	width: 15%;
+	text-align: right;
+	padding: 1px 10px 1px 10px;
+}
+table.barchart .bar {
+	background-color: #599EDE;
+	color: white;
+	width:100%;
+	padding-left:5px;
+	border-radius: 2px;
+	margin: .5px;
+
+}
+
+.lightbox {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+/* display:none for disabling the lightbox */
+	display:none
+}
+
+.lightbox .frame {
+	position: relative;
+	background-color: white;
+	margin: 20%;
+	width: 60%;
+	border-radius: 10px;
+}
+.lightbox .frame .popup {
+	position: relative;
+	padding: 20px 20px 50px 20px;
+}
+.button {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display:block;
+	height: 20px;
+	width: 100px;
+	background: #ED818A;
+	color: white;
+	padding: 10px;
+	margin: 20px;
+	text-decoration: none;
+	border-radius: 3px;
+	text-align: center;
+}
+img {
+	float: left;
+	margin: 0 1em 1em 0;
+	zoom: 1;
+}
+
+p {
+	overflow: hidden;
+}
+
+/* separate property to affect the last objects */
+.nested-media-block {
+	position: relative;
+	overflow: hidden;
+}
+
